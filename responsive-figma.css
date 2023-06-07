@@ -2,6 +2,7 @@
 .display-normal {
     display:flex;
 }
+/* page-one */
 .page-one {
     flex-direction: column;
     gap:130px
@@ -51,4 +52,11 @@
     height: 428px;
     border-radius: 20px;
     padding: 10px
+}
+.elipse {
+    height: 19px;
+    width: 19px;
+    border: #FFCF23 solid 1px;
+    border-radius: 50%;
+    background-color: #FFCF23;
 }
