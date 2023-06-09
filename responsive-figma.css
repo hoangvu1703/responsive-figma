@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Inter';
     src: url(./font/Inter-VariableFont_slnt\,wght.ttf) format('ttf');
-    font-weight: normal;
-    font-style: normal;
 }
 body {
     font-family: 'Inter';
@@ -33,6 +31,10 @@ body {
 .center {
     gap: 30px;
 }
+.left-one {
+    background-color: #1e1e1e;
+    color:#ffffff
+}
 .text {
     color: black;
     text-decoration: none;
@@ -43,9 +45,13 @@ body {
     color: #ffffff;
     width: 100px;
     height: 36px;
+    border: solid 0;
 }
 .mid-one {
     gap: 130px;
+}
+.other {
+    padding: 109.5px 124px;
 }
 .other-mid {
     gap: 15px;
@@ -58,11 +64,12 @@ body {
     font-size: 30px;
 }
 .recipe {
-    height: 35px;
-    width: 140px;
+    height: 45px;
+    width: 165px;
     border-radius: 30px;
     background-color: #FFCF23;
     font-weight: bold;
+    border: solid 0;
 }
 .image {
     width: 531px;
@@ -82,13 +89,24 @@ body {
     gap: 10px;
 }
 .bot-one {
-    padding: 64px;
-    gap: 180px;
+    padding: 64px 132px;
+    gap: 150px;
 }
 .other-bot {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.button-menu {
+    display:none;
+}
+.menu {
+    display:flex;
+    justify-content: center;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
 }
 /* end page one */
 /* page-two */
@@ -106,6 +124,13 @@ body {
 }
 .list {
     padding-left: 16px;
+    line-height: 24px;
+}
+.values {
+    font-size: 32px;
+}
+.will {
+    font-size: 16px;
 }
 /* end page-two */
 /* page-three */
@@ -115,8 +140,8 @@ body {
     border-radius: 50%;
 }
 .page-three {
-    gap: 160px;
     padding: 96px;
+    flex-direction: column
 }
 .comment {
     border-radius: 10px;
@@ -130,6 +155,24 @@ body {
 }
 .user-blod {
     margin-bottom: 0;
+}
+.never {
+    display:flex;
+    gap: 130px;
+}
+.round {
+    display:none;
+}
+.slider {
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.sli-one {
+    background-color: #F3F3F3;
+}
+.sli-two {
+    background-color: black;
 }
 /* end page-three */
 /* page-four */
@@ -154,21 +197,23 @@ body {
     border-radius: 20px;
     font-size: 16px;
     font-weight: bold;
+    border: solid 0;
 }
 /* end page-four */
 /* page-five */
 .page-five {
-    gap: 200px;
-    padding: 96px 150px;
+    gap: 140px;
+    padding: 96px 54px;
     background-color: #1e1e1e;
     color: #ffffff;
 }
 .decor {
     text-decoration: none;
     color: #ffffff;
+    font-size: 16px;
 }
 .type-input {
-    width:210px;
+    width:180px;
     height: 28px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 40px;
@@ -176,7 +221,162 @@ body {
     font-size: 16px;
     padding: 12px 24px;
 }
+.fixed {
+    display :flex;
+    gap: 100px;
+}
 .posi {
     position: relative;
     
 }
+.text-first {
+    font-size: 18px;
+    margin-top: 0;
+}
+.double {
+    font-size: 24px;
+    margin-top: 0;
+}
+.emo {
+    color :#9f9f9f;
+}
+/* end page-five */
+/* tablet 1024px */
+@media screen and (min-width: 1024px) and (max-width:1439px) {
+    body {
+        margin: 0;
+    }
+    /* page-one */
+    .top-one {
+        gap: 150px;
+    }
+    .mid-one {
+        flex-direction: column;
+        gap:70px;
+    }
+    .other {
+        text-align: center;
+    }
+    .size-check {
+        font-size: 24px;
+    }
+    .size-double {
+        font-size: 50px;
+    }
+    .size-normal {
+        font-size: 24px;
+    }
+    .recipe {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .size-small {
+        font-size: 16px;
+    }
+    .image {
+        width: 960px;
+        height: 428px;
+    }
+    .page-one {
+        gap: 15px;
+    }
+    .bot-one {
+        padding: 32px;
+        gap: 100px;
+    }
+    /* end page-one */
+    /* page-two */
+    .mental {
+        flex-direction: column;
+        padding: 32px 22px 64px;
+        gap: 50px;
+    }
+    .img-heath {
+        width: 960px;
+        height: 550px;
+    }
+    .program {
+        display:flex;
+        gap: 110px;
+    }
+    .tech {
+        width:37%
+    }
+    .nology {
+        width: 50%;
+       
+    }
+    .list {
+        margin-top: 0;
+    }
+    .values {
+        font-size: 24px;
+        margin-top: 0;
+    }
+    /* end page-two */
+    /* page-three */
+    .page-three {
+        padding:36px 0 48px;
+        gap: 50px;
+    }
+    .never {
+        gap: 30px;
+    }
+    .round {
+        display: flex;
+        justify-content: center;
+        gap: 12px
+    }
+    /* end page-three */
+    /* page-four */
+    .page-four {
+        height: 528px;
+    }
+    /* end page-four */
+    /* page-five */
+    .page-five {
+        gap: 146px;
+        padding: 60px 24px;
+    }
+    .fixed {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .space {
+        padding-top: 70px;
+    }
+}
+@media screen and (min-width: 744px) and (max-width: 1023px){
+    /* page-one */
+    .page-one {
+        gap:40px;
+    }
+    .top-one{
+        gap: 20px;
+        padding: 0 30px;
+        justify-content: space-between
+    }
+    .center {
+        display:none;
+    }
+    .right-one {
+        display:none;
+    }
+    .button-menu {
+        display:block   
+    }
+    .mid-one {
+        flex-direction: column;
+    }
+    .other {
+        padding: 0%;
+        text-align: center;
+    }
+    .size-double {
+        font-size: 40px;
+    }
+    .size-normal {
+        font-size: 18px;
+    }
+}
+
