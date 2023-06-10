@@ -68,7 +68,7 @@ body {
     width: 165px;
     border-radius: 30px;
     background-color: #FFCF23;
-    font-weight: bold;
+    font-weight: 500;
     border: solid 0;
 }
 .image {
@@ -99,6 +99,9 @@ body {
 }
 .button-menu {
     display:none;
+}
+.pro {
+    gap: 10px;
 }
 .menu {
     display:flex;
@@ -347,6 +350,9 @@ body {
     }
 }
 @media screen and (min-width: 744px) and (max-width: 1023px){
+    body {
+        margin: 0;
+    }
     /* page-one */
     .page-one {
         gap:40px;
@@ -377,6 +383,95 @@ body {
     }
     .size-normal {
         font-size: 18px;
+    }
+    .other-mid {
+        flex-direction: column;  
+    }
+    .pro {
+        align-items: center
+    }
+    .recipe {
+        width: 150px;
+        height: 36px;
+        font-size: 16px;
+    }
+    .image {
+        width: 700px;
+        height: 500px;
+    }
+    .bot-one {
+        flex-direction: column;
+        padding: 0 22px;
+        gap: 10px;
+    }
+    .other-bot {
+        align-items: center;
+    }
+    .text-page-one {
+        line-height: 24px;
+        letter-spacing: 0.1px;
+
+    }
+    .page-one {
+        gap: 0;
+    }
+    /* end page-one */
+    /* page-two */
+    .mental {
+        flex-direction: column;
+        gap: 0px;
+        padding: 24px;
+    }
+    .img-heath {
+        width: 666px;
+        height: 530px;
+    }
+    .program {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech {
+        text-align: center;
+    }
+    .values {
+        font-size: 24px;
+    }
+    /* end page-two */
+    /* page-three */
+    .city {
+        display: none;
+    }
+    .page-three {
+        padding: 30px 24px;
+        gap: 20px;
+    }
+    .comment {
+        width: 50%;
+    }
+    .never {
+        gap: 14px;
+    }
+    .round {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+    }
+    /* end page-three */
+    /* page-four */
+    .page-four {
+        background-size: cover;
+    }
+    .page-five {
+        gap: 50px;
+        padding: 60px 24px;
+    }
+    .fixed {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .space {
+        padding-top: 70px;
     }
 }
 
