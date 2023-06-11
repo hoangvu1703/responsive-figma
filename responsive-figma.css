@@ -48,7 +48,8 @@ body {
     border: solid 0;
 }
 .mid-one {
-    gap: 130px;
+    gap: 90px;
+    padding: 0 210px;
 }
 .other {
     padding: 109.5px 124px;
@@ -210,13 +211,14 @@ body {
     background-color: #1e1e1e;
     color: #ffffff;
 }
+
 .decor {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
 }
 .type-input {
-    width:180px;
+    width: 330px;
     height: 28px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 40px;
@@ -243,6 +245,9 @@ body {
 .emo {
     color :#9f9f9f;
 }
+.column {
+    gap: 140px
+}
 /* end page-five */
 /* tablet 1024px */
 @media screen and (min-width: 1024px) and (max-width:1439px) {
@@ -255,7 +260,10 @@ body {
     }
     .mid-one {
         flex-direction: column;
-        gap:70px;
+        gap:40px;
+    }
+    .other-mid {
+        flex-direction: column;
     }
     .other {
         text-align: center;
@@ -265,9 +273,12 @@ body {
     }
     .size-double {
         font-size: 50px;
+        padding: 0 194px;
+        margin: 0;
     }
     .size-normal {
         font-size: 24px;
+        padding: 0 108px;
     }
     .recipe {
         font-size: 16px;
@@ -338,15 +349,15 @@ body {
     /* end page-four */
     /* page-five */
     .page-five {
-        gap: 146px;
+        gap: 10px;
         padding: 60px 24px;
     }
     .fixed {
         flex-direction: column;
         gap: 20px;
     }
-    .space {
-        padding-top: 70px;
+    .solo {
+        width: 228px;
     }
 }
 @media screen and (min-width: 744px) and (max-width: 1023px){
@@ -375,7 +386,7 @@ body {
         flex-direction: column;
     }
     .other {
-        padding: 0%;
+        padding: 0;
         text-align: center;
     }
     .size-double {
@@ -398,6 +409,7 @@ body {
     .image {
         width: 700px;
         height: 500px;
+        padding: 10px 10px 0 10px;
     }
     .bot-one {
         flex-direction: column;
@@ -462,16 +474,178 @@ body {
     .page-four {
         background-size: cover;
     }
+    /* end page-four */
+    /* page-five */
     .page-five {
         gap: 50px;
         padding: 60px 24px;
     }
     .fixed {
         flex-direction: column;
+        gap: 12px;
+    }
+    .column {
+        gap: 40px;
+    }
+    .solo {
+        width: 108px;
+    }
+    .email {
         gap: 20px;
     }
+    /* end page-five */
+}
+@media screen and (min-width: 390px) and (max-width: 743px) {
+    
+    /* page-one */
+    .page-one {
+        gap:0px;
+    }
+    .top-one{
+        gap: 20px;
+        padding: 0 32px;
+        justify-content: space-between
+    }
+    .size-check {
+        font-size: 20px;
+    }
+    .center {
+        display:none;
+    }
+    .right-one {
+        display:none;
+    }
+    .button-menu {
+        display:block   
+    }
+    .left-one {
+        background-color: #ffffff;
+        color: black;
+    }
+    .mid-one {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .other {
+        padding: 0;
+        text-align: center;
+    }
+    .size-double {
+        padding: 0 20px;
+        font-size: 54px;
+    }
+    .other-mid {
+        flex-direction: column;  
+    }
+    .size-normal {
+        font-size: 22px;
+    }
+    .pro {
+        flex-direction: column;
+    }
+    .size-small {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0 20px;
+    }
+    .image {
+        width: 370px;
+        height: 316px;
+    }
+    .bot-one {
+        flex-direction: column;
+        padding: 26px 22px;
+        gap: 20px;
+    }
+    .box-elipse {
+        padding: 0 60px;
+    }
+    .hello {
+        font-size: 18px;
+        margin: 0;
+    }
+    .area-text {
+        font-size: 18px;
+    }
+    /* end page-one */
+    /* page-two */
+    .mental {
+        flex-direction: column;
+        padding: 24px;
+        gap:0;
+    }
+    .img-heath {
+        width: 342px;
+        height: 195px;
+    }
+    .values {
+        text-align: center;
+        font-size: 24px;
+    }
+    .will {
+        line-height: 24px;
+    }
+    /* end page-two */
+    /* page-three */
+    .page-three {
+        padding:36px 0 48px;
+        gap: 50px;
+    }
+    .never {
+        gap: 30px;
+    }
+    .round {
+        display: flex;
+        justify-content: center;
+        gap: 12px
+    }
+    .village, .city {
+        display: none;
+    }
+    .hi {
+        margin: 0px 20px;
+    }
+    .comment {
+        gap: 60px;
+    }
+    /* end page-three */
+    /* page-four */
+    .page-four {
+        background-size: cover;
+        height: 528px;
+        gap: 26px;
+    }
+    .text-work {
+        font-size: 28px;
+    }
+    /* end page-four */
+    /* page-five */
+    .page-five {
+        gap: 50px;
+        padding: 60px 24px;
+        flex-direction: column;
+    }
+    .fixed {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cb {
+        text-align: center;
+    }
+    .column {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        justify-content: space-between;
+    }
     .space {
-        padding-top: 70px;
+        padding-top: 0px;
+    }
+    .email {
+        text-align: center;
+    }
+    .type-input {
+        width: 274px;
     }
 }
 
